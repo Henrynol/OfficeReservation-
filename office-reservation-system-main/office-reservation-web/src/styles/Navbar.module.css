@@ -1,0 +1,54 @@
+/* Navbar */
+.navBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8vh;
+    background-color: #ffffff; /* Light gray to match Driessen */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+/* Logo */
+.logo {
+    font-size: 6vh;
+    color: #E71234; /* Driessen red */
+    font-weight: bold;
+    pointer-events: none;
+}
+
+/* Nav Links */
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between each nav link */
+}
+
+.navLinks li {
+    display: inline-block;
+}
+
+.navLinks li a {
+    text-decoration: none;
+    color: #ef0a0a; /* Dark gray text */
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.navLinks li a:hover {
+    color: #e71234;
+    border-radius: 02px;
+    border-bottom-color: #E71234;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-style: solid;
+    transition: color 2s , border-bottom-color 2s, border-bottom-width 10ms;
+}
